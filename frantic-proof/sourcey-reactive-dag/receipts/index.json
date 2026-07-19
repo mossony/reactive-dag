@@ -1,0 +1,21 @@
+{
+  "schema": "runx.receipt_store_index.v1",
+  "generated_at": "1784461946701620000",
+  "entries": [
+    {
+      "receipt_id": "sha256:106b6a32fe703d42214fe8b0e49ab72e76b06127dddf7227f18a12ed4483b05a",
+      "file_name": "sha256-106b6a32fe703d42214fe8b0e49ab72e76b06127dddf7227f18a12ed4483b05a.json",
+      "created_at": "2026-07-19T11:52:17.673Z"
+    },
+    {
+      "receipt_id": "sha256:d5a89b2c7cdb7bc950a0a7fa0557afbda7b9a6e86ef510c7ad2e596774f08ad9",
+      "file_name": "sha256-d5a89b2c7cdb7bc950a0a7fa0557afbda7b9a6e86ef510c7ad2e596774f08ad9.json",
+      "created_at": "2026-07-19T11:52:17.673Z"
+    },
+    {
+      "receipt_id": "sha256:dd32066ef972b70922f4b52cb4007a5d86db732432f586f291fab5ae72a5f1f2",
+      "file_name": "sha256-dd32066ef972b70922f4b52cb4007a5d86db732432f586f291fab5ae72a5f1f2.json",
+      "created_at": "2026-07-19T11:52:17.673Z"
+    }
+  ]
+}

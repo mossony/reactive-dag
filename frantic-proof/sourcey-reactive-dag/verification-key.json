@@ -1,0 +1,8 @@
+{
+  "schema": "runx.receipt.verification_key.v1",
+  "kid": "mossony-frantic-33-20260719",
+  "alg": "Ed25519",
+  "public_key_base64": "zO2+kJQLyHrCDUAdmx9/i7GYKCb0LK9Wq1xBItDZVOE=",
+  "public_key_sha256": "sha256:296eac9955c95400391f092b78f7d2700b2bc5e2f151db7babfe391af6315397",
+  "note": "Public verification key only. The ephemeral private seed used for this proof was not persisted."
+}

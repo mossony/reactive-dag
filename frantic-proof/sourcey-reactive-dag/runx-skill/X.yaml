@@ -1,0 +1,96 @@
+skill: reactivedag-sourcey-proof
+version: "0.1.0"
+
+catalog:
+  kind: graph
+  audience: public
+  visibility: public
+  role: canonical
+  execution: read
+  completion: runtime_receipt
+  requires_adapter: false
+  approval: none
+
+runners:
+  verify:
+    default: true
+    type: graph
+    inputs:
+      repository_url:
+        type: string
+        required: true
+      commit:
+        type: string
+        required: true
+      public_url:
+        type: string
+        required: true
+      adoption_url:
+        type: string
+        required: true
+      runx_version_output:
+        type: string
+        required: true
+    graph:
+      name: reactivedag-sourcey-proof
+      steps:
+        - id: validate
+          label: rebuild and verify adopted docs
+          run:
+            type: cli-tool
+            command: node
+            args:
+              - validate.mjs
+            timeout_seconds: 240
+            outputs:
+              evidence: object
+              report: object
+              verification: object
+            sandbox:
+              profile: network
+              cwd_policy: skill-directory
+              network: true
+              require_enforcement: false
+          scopes:
+            - net:https://github.com
+            - net:https://api.github.com
+            - net:https://registry.npmjs.org
+            - net:https://richardsmythe.github.io
+          artifacts:
+            named_emits:
+              evidence: evidence
+              report: report
+              verification: verification
+            packets:
+              evidence: runx.release.verification_summary.v1
+              report: runx.release.verification_summary.v1
+              verification: runx.release.verification_summary.v1
+
+        - id: finalize
+          label: seal verified delivery packet
+          context:
+            evidence: validate.evidence.data
+            report: validate.report.data
+            verification: validate.verification.data
+          run:
+            type: cli-tool
+            command: node
+            args:
+              - finalize.mjs
+            timeout_seconds: 30
+            outputs:
+              delivery: object
+            sandbox:
+              profile: readonly
+              cwd_policy: skill-directory
+              require_enforcement: false
+          artifacts:
+            named_emits:
+              delivery: delivery
+            packets:
+              delivery: runx.release.verification_summary.v1
+      policy:
+        guards:
+          - step: finalize
+            field: validate.verification.data.verified
+            equals: true

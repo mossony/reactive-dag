@@ -1,0 +1,207 @@
+{
+  "adoption": {
+    "contribution_head": "83bcb3a79b11c749975e4bec4225357e8da39bd9",
+    "deployed_commit": "8b1ba36fdde1c8013fdcece8c2acf08606341796",
+    "followup_commit_count": 6,
+    "merge_commit": "8bb0a64acda71169e7f156bfff455cd287558719",
+    "merged_at": "2026-07-19T09:31:39Z",
+    "merged_by": "richardsmythe",
+    "pull_request": "https://github.com/richardsmythe/reactive-dag/pull/2"
+  },
+  "coverage": {
+    "documented_public_apis": 75,
+    "minimum_required": 20,
+    "reference_pages": [
+      {
+        "slug": "dag-engine",
+        "symbol_count": 15,
+        "title": "DagEngine"
+      },
+      {
+        "slug": "pipeline-builder",
+        "symbol_count": 15,
+        "title": "DagPipelineBuilder"
+      },
+      {
+        "slug": "cells-and-nodes",
+        "symbol_count": 38,
+        "title": "Cells and nodes"
+      },
+      {
+        "slug": "contracts-and-enums",
+        "symbol_count": 7,
+        "title": "Contracts and enums"
+      }
+    ],
+    "search_entries": 83,
+    "source_link_prefix": "https://github.com/richardsmythe/reactive-dag/blob/8b1ba36fdde1c8013fdcece8c2acf08606341796/"
+  },
+  "gaps": [
+    "The extractor intentionally parses public C# declarations and XML summaries without compiling a semantic model; future syntax constructs may require parser updates.",
+    "Generated Markdown is pinned to an immutable source snapshot and should be refreshed when the public API changes.",
+    "The reference covers signatures and summary comments but does not yet render every XML parameter, return, exception, or generic constraint as separate prose."
+  ],
+  "generated_at": "2026-07-19T11:52:25.792Z",
+  "observations": [
+    {
+      "evidence": "runx --version",
+      "id": "runx_cli_version",
+      "result": "runx-cli 0.7.1"
+    },
+    {
+      "evidence": "ReactiveDAG source and project metadata",
+      "id": "ecosystem_target",
+      "result": "C# / .NET 8"
+    },
+    {
+      "evidence": "https://github.com/richardsmythe/reactive-dag/tree/8b1ba36fdde1c8013fdcece8c2acf08606341796",
+      "id": "repository_and_license",
+      "result": "Maintained third-party ReactiveDAG repository under MIT"
+    },
+    {
+      "evidence": "https://github.com/richardsmythe/reactive-dag/tree/8b1ba36fdde1c8013fdcece8c2acf08606341796",
+      "id": "source_inventory",
+      "result": "15 C# source files"
+    },
+    {
+      "evidence": "https://github.com/richardsmythe/reactive-dag/pull/2",
+      "id": "upstream_adoption",
+      "result": "Merged; deployed commit is a verified descendant with 6 follow-up commit(s)"
+    },
+    {
+      "evidence": "https://github.com/richardsmythe/reactive-dag/commit/8b1ba36fdde1c8013fdcece8c2acf08606341796",
+      "id": "immutable_deployed_commit",
+      "result": "8b1ba36fdde1c8013fdcece8c2acf08606341796"
+    },
+    {
+      "evidence": "https://github.com/richardsmythe/reactive-dag/compare/8bb0a64acda71169e7f156bfff455cd287558719...8b1ba36fdde1c8013fdcece8c2acf08606341796",
+      "id": "post_merge_link_repair",
+      "result": "Maintainer repaired four Reference-section links after Sourcey's GitHub Pages URL rewriting exposed a missed deployment QA case"
+    },
+    {
+      "evidence": "https://github.com/richardsmythe/reactive-dag/blob/8b1ba36fdde1c8013fdcece8c2acf08606341796/docs/sourcey.config.ts",
+      "id": "sourcey_adapter_and_config",
+      "result": "Sourcey 3.6.5 markdown site fed by deterministic C# extraction"
+    },
+    {
+      "evidence": "https://github.com/richardsmythe/reactive-dag/blob/8b1ba36fdde1c8013fdcece8c2acf08606341796/docs/generated/manifest.json",
+      "id": "api_coverage",
+      "result": "75 public declarations"
+    },
+    {
+      "evidence": "\nGenerated 75 public declarations across 4 reference pages at 8b1ba36fdde1.\n\nSourcey: building documentation site\n\n  Pages:  5\n  Output: /private/var/folders/8_/v40s895d029382x818cbwqd80000gn/T/reactivedag-sourcey-proof-mTxB6C/checkout/docs/dist\n  Time:   2.5s",
+      "id": "clean_rebuild",
+      "result": "passed"
+    },
+    {
+      "evidence": "> verify\n> node scripts/verify-site.mjs\n\nVerified 75 declarations, 4 reference pages, search, and context exports.",
+      "id": "project_verification",
+      "result": "passed"
+    },
+    {
+      "evidence": "added 256 packages, and audited 257 packages in 2s\n\n71 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities",
+      "id": "dependency_audit",
+      "result": "0 vulnerabilities"
+    },
+    {
+      "evidence": [
+        {
+          "bytes": 22874,
+          "page": "generated/introduction.html",
+          "status": 200
+        },
+        {
+          "bytes": 59001,
+          "page": "generated/dag-engine.html",
+          "status": 200
+        },
+        {
+          "bytes": 61748,
+          "page": "generated/pipeline-builder.html",
+          "status": 200
+        },
+        {
+          "bytes": 104864,
+          "page": "generated/cells-and-nodes.html",
+          "status": 200
+        },
+        {
+          "bytes": 32465,
+          "page": "generated/contracts-and-enums.html",
+          "status": 200
+        }
+      ],
+      "id": "live_surface",
+      "result": "5 pages returned HTTP 200"
+    },
+    {
+      "evidence": {
+        "base_url": "/reactive-dag/",
+        "entries": 83
+      },
+      "id": "generated_navigation",
+      "result": "project-scoped search and five-page navigation"
+    },
+    {
+      "evidence": [
+        {
+          "asset": "llms.txt",
+          "bytes": 788,
+          "status": 200
+        },
+        {
+          "asset": "llms-full.txt",
+          "bytes": 17109,
+          "status": 200
+        },
+        {
+          "asset": "sitemap.xml",
+          "bytes": 656,
+          "status": 200
+        }
+      ],
+      "id": "context_exports",
+      "result": "live"
+    },
+    {
+      "evidence": "github.com/richardsmythe/reactive-dag/blob/8b1ba36fdde1c8013fdcece8c2acf08606341796/...#L<line>",
+      "id": "source_mapping",
+      "result": "immutable line-level links"
+    }
+  ],
+  "public_url": "https://richardsmythe.github.io/reactive-dag/",
+  "repository": {
+    "license": "MIT",
+    "primary_language": "C#",
+    "pushed_at": "2026-07-19T10:46:11Z",
+    "source_commit": "8b1ba36fdde1c8013fdcece8c2acf08606341796",
+    "source_file_count": 15,
+    "stargazers_count": 6,
+    "upstream_repo": "https://github.com/richardsmythe/reactive-dag"
+  },
+  "runx": {
+    "skill": "reactivedag-sourcey-proof 0.1.0",
+    "verification_mode": "production-signed governed validation",
+    "version_output": "runx-cli 0.7.1"
+  },
+  "schema": "frantic.sourcey.evidence.v1",
+  "sourcey": {
+    "adapter": "deterministic C# source extractor with Sourcey markdown",
+    "base_url": "/reactive-dag/",
+    "commands": [
+      "npm ci",
+      "npm run build",
+      "npm run verify"
+    ],
+    "config": "docs/sourcey.config.ts",
+    "pages": [
+      "generated/introduction.html",
+      "generated/dag-engine.html",
+      "generated/pipeline-builder.html",
+      "generated/cells-and-nodes.html",
+      "generated/contracts-and-enums.html"
+    ],
+    "version_output": "Sourcey 3.6.5"
+  },
+  "summary": "ReactiveDAG's project-owned Sourcey 3.6.5 site was rebuilt from the current immutable upstream deployment commit, which descends from the accepted documentation PR. It reproduces 75 source-linked public declarations, five navigable pages, project-scoped search, and live context exports, including the maintainer's post-merge link repairs."
+}

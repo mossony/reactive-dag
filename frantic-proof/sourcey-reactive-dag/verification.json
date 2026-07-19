@@ -1,0 +1,46 @@
+{
+  "schema": "runx.receipt.verification.v1",
+  "receipt_ref": "runx:receipt:sha256:106b6a32fe703d42214fe8b0e49ab72e76b06127dddf7227f18a12ed4483b05a",
+  "receipt_id": "sha256:106b6a32fe703d42214fe8b0e49ab72e76b06127dddf7227f18a12ed4483b05a",
+  "signature": {
+    "valid": true,
+    "mode": "production",
+    "kid": "mossony-frantic-33-20260719",
+    "public_key_base64": "zO2+kJQLyHrCDUAdmx9/i7GYKCb0LK9Wq1xBItDZVOE=",
+    "public_key_sha256": "sha256:296eac9955c95400391f092b78f7d2700b2bc5e2f151db7babfe391af6315397"
+  },
+  "receipt_tree": {
+    "valid": true,
+    "receipt_count": 3,
+    "parent_missing": null,
+    "findings": []
+  },
+  "governed_validation": {
+    "adoption_url": "https://github.com/richardsmythe/reactive-dag/pull/2",
+    "checks": {
+      "adoption_merge_commit": "8bb0a64acda71169e7f156bfff455cd287558719",
+      "api_count": 75,
+      "clean_checkout": true,
+      "deployed_commit_descends_from_adoption": true,
+      "live_pages": 5,
+      "live_search_entries": 83,
+      "npm_ci": true,
+      "post_merge_followup_commits": 6,
+      "project_owned_home": true,
+      "project_verify": true,
+      "rendered_pages": 6,
+      "source_files": 15,
+      "sourcey_build": true,
+      "upstream_adopted": true
+    },
+    "commit": "8b1ba36fdde1c8013fdcece8c2acf08606341796",
+    "evidence_sha256": "1f3bf099941be65aaa1a7be03a4cd90c6f86884b5a79233aba3b4d70266e94e1",
+    "public_url": "https://richardsmythe.github.io/reactive-dag/",
+    "report_sha256": "8c4c15d7f1041a5f15bc78be0f5aa4c9f87d5d3c73431b72fbebc9d30529b94d",
+    "repository": "https://github.com/richardsmythe/reactive-dag",
+    "schema": "runx.release.verification_summary.v1",
+    "verified": true,
+    "verified_at": "2026-07-19T11:52:25.792Z"
+  },
+  "verify_command": "RUNX_RECEIPT_VERIFY_KID=mossony-frantic-33-20260719 RUNX_RECEIPT_VERIFY_ED25519_PUBLIC_KEY_BASE64=zO2+kJQLyHrCDUAdmx9/i7GYKCb0LK9Wq1xBItDZVOE= runx verify sha256:106b6a32fe703d42214fe8b0e49ab72e76b06127dddf7227f18a12ed4483b05a --receipt-dir ./receipts --json"
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "runx.receipt.v1",
+  "id": "sha256:106b6a32fe703d42214fe8b0e49ab72e76b06127dddf7227f18a12ed4483b05a",
+  "created_at": "2026-07-19T11:52:17.673Z",
+  "canonicalization": "runx.receipt.c14n.v1",
+  "issuer": {
+    "type": "hosted",
+    "kid": "mossony-frantic-33-20260719",
+    "public_key_sha256": "sha256:296eac9955c95400391f092b78f7d2700b2bc5e2f151db7babfe391af6315397"
+  },
+  "signature": {
+    "alg": "Ed25519",
+    "value": "base64:ANiKF9fd8FIAhFMTiUWLNp_PtiHgmf7jDAmddQ_2qJN-wJe2YmRPj_pKQh-exWIorHPc73dYsygoV8JYy-uJBQ"
+  },
+  "digest": "sha256:7232b5e55f50e8aa1cfbc59a62996a26ed71fedbd59d1f710bc5604594949b3f",
+  "idempotency": {
+    "intent_key": "sha256:reactivedag-sourcey-proof-graph-intent",
+    "trigger_fingerprint": "sha256:reactivedag-sourcey-proof-graph-trigger",
+    "content_hash": "sha256:reactivedag-sourcey-proof-graph-content"
+  },
+  "subject": {
+    "kind": "graph",
+    "ref": {
+      "type": "harness",
+      "uri": "hrn_reactivedag-sourcey-proof_graph"
+    },
+    "commitments": []
+  },
+  "authority": {
+    "actor_ref": {
+      "type": "principal",
+      "uri": "runx:principal:local_runtime"
+    },
+    "grant_refs": [],
+    "scope_refs": [],
+    "authority_proof_refs": [],
+    "attenuation": {
+      "parent_authority_ref": null,
+      "subset_proof": null
+    },
+    "terms": [],
+    "enforcement": {
+      "profile_hash": "sha256:635fdb0a7eef93911e3c6bd0b25b5e635edba32e0259133042b3a5f1fb19394e",
+      "redaction_refs": [],
+      "setup_refs": [],
+      "teardown_refs": []
+    }
+  },
+  "signals": [],
+  "decisions": [],
+  "acts": [],
+  "seal": {
+    "disposition": "closed",
+    "reason_code": "graph_closed",
+    "summary": "graph reactivedag-sourcey-proof completed",
+    "closed_at": "2026-07-19T11:52:17.673Z",
+    "last_observed_at": "2026-07-19T11:52:17.673Z",
+    "criteria": []
+  },
+  "lineage": {
+    "children": [
+      {
+        "type": "receipt",
+        "uri": "runx:receipt:sha256:d5a89b2c7cdb7bc950a0a7fa0557afbda7b9a6e86ef510c7ad2e596774f08ad9",
+        "locator": "sha256:2fa377f081677ec155d8c225addbaec3b3c45d4b2a346d9c7b92a0983e5ca84c"
+      },
+      {
+        "type": "receipt",
+        "uri": "runx:receipt:sha256:dd32066ef972b70922f4b52cb4007a5d86db732432f586f291fab5ae72a5f1f2",
+        "locator": "sha256:805d832419beffd91595a0dc454cb71970b6563593e267cf5947cb5653b60496"
+      }
+    ],
+    "sync": []
+  }
+}
